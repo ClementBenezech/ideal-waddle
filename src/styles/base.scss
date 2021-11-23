@@ -1,3 +1,6 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/mixins.scss";
+
 .main-content {
     width: 90%;
     display:flex;
@@ -6,4 +9,8 @@
     align-content: flex-start;
     box-sizing:border-box;
     padding-left: 5vw;
+     @include mobile-only {
+         flex-direction:column;
+     }
+    
 }

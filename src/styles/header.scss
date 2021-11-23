@@ -1,3 +1,6 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/mixins.scss";
+
 .header {
 
     width: 100vw;
@@ -8,5 +11,8 @@
         width: 10vw;
         margin-left: 1vw;
         object-fit:contain;
+        @include mobile-only {
+            width: 100%;
+        }
     }
 }

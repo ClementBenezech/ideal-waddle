@@ -1,3 +1,6 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/mixins.scss";
+
 .accounts {
     display:flex;
     flex-direction:row;
@@ -5,4 +8,7 @@
     width: 90%;
     background-color: rgba(82, 82, 82, 0.144);
     border-radius: 1.5vw;
+    @include mobile-only {
+        width: 100%;
+    }
 }

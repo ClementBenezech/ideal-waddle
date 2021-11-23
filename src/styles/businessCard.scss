@@ -1,11 +1,26 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/mixins.scss";
+
 .business-card {
     width:90%;
     text-align:left;
     padding: 4vw 0vw;
     box-sizing:border-box;
     font-size: 1vw;
+    @include mobile-only {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+
+    }
     &__name {
         font-size: 2.3vw;
+        color: #f35959;
+        @include mobile-only {
+            font-size: 5vw;
+            padding-bottom: 5vw;
+        }
     }
     &__company {
         &__title {
@@ -13,9 +28,19 @@
             margin-top: 1vw;
             margin-bottom: 1vw;
             font-size: 2vw;
+            color: grey;
+            @include mobile-only {
+                font-size: 4vw;
+                margin: 1vw;
+            }
         }
         &__data {
             margin-left: 2.5vw;
+
+            @include mobile-only {
+                font-size: 3vw;
+                margin: 1vw;
+            }
         }
     }
 }

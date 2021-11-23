@@ -1,3 +1,6 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/mixins.scss";
+
 .account-card {
     width: 20vw;
     height: max-content;
@@ -15,12 +18,18 @@
     align-content:center;
     box-sizing:border-box;
     margin: 2vw;
+    @include mobile-only {
+        width: 100%;
+        font-size: 3vw;
+    }
     &__label {
         width:60%;
+        padding-bottom: 1vw;
 
     }
     &__value {
         width:40%;
         color: rgb(0, 255, 0);
+        padding-bottom: 1vw;
     }
 }
