@@ -1,3 +1,5 @@
+//Nothing fancy to see here, just inactive navIcons*/
+
 import "../styles/nav.scss"
 
 const Nav = () => {

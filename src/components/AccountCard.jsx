@@ -1,3 +1,5 @@
+/* Here we use the props we got from the Account component, and generate a single account card with number and balance*/
+
 import "../styles/accounts.scss"
 import "../styles/accountsCard.scss"
 

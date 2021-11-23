@@ -1,3 +1,5 @@
+/* Here, we use all the data we got from the SIREN and randomUser APIs, and we display them from props*/
+
 import '../styles/businessCard.scss'
 
 const BusinessCard = (props) => {

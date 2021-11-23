@@ -14,3 +14,13 @@
      }
     
 }
+.loader {
+    width: 100vw;
+    height: 90vh;
+    font-size: 30vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    color: #6247d1;
+}
