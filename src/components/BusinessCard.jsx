@@ -4,7 +4,7 @@ const BusinessCard = (props) => {
     if (props.data !== null) {
         return (
             <div className = "business-card">
-                <div>{props.title+" "+props.last+" "+props.first}</div>
+                <div className = "business-card__name">{props.title+" "+props.last+" "+props.first}</div>
                 <div className = "business-card__company__title">Company</div>
                 <div className = "business-card__company__data">{"Name: "+props.legalName}</div>
                 <div className = "business-card__company__data">{"SIRET: "+props.siret}</div>

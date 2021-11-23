@@ -1,3 +1,26 @@
 .account-card {
-    width: 30vw;
+    width: 20vw;
+    height: max-content;
+    margin: 0 5vw;
+    text-align:left;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    background: #6247d1;
+    color:white;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    font-weight:bold;
+    align-content:center;
+    box-sizing:border-box;
+    margin: 2vw;
+    &__label {
+        width:60%;
+
+    }
+    &__value {
+        width:40%;
+        color: rgb(0, 255, 0);
+    }
 }

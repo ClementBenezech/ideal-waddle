@@ -1,14 +1,21 @@
 .business-card {
     width:90%;
     text-align:left;
-    padding: 2vw;
+    padding: 4vw 0vw;
     box-sizing:border-box;
+    font-size: 1vw;
+    &__name {
+        font-size: 2.3vw;
+    }
     &__company {
         &__title {
-            margin-left: 1vw;
+            margin-left: 2vw;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+            font-size: 2vw;
         }
         &__data {
-            margin-left: 3vw;
+            margin-left: 2.5vw;
         }
     }
 }

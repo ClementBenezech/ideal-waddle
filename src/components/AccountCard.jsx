@@ -5,8 +5,10 @@ const AccountCard = (props) => {
 
         return (
             <div className = "account-card">
-                <div >{"Account-number: "+props.account.account_number}</div>
-                <div >{"Balance: "+props.account.available}</div>
+                <div className = "account-card__label">Account Number</div>
+                <div className = "account-card__value">{props.account.account_number}</div>
+                <div className = "account-card__label">Balance</div>
+                <div className = "account-card__value">{props.account.available+" "+props.account.currency}</div>
             </div>
 
         )

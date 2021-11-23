@@ -1,6 +1,12 @@
 .header {
 
     width: 100vw;
-    height:20vh;
-    background-color: red;
+    height:10vh;
+    display:flex;
+    justify-content:flex-start;
+    & img {
+        width: 10vw;
+        margin-left: 1vw;
+        object-fit:contain;
+    }
 }
