@@ -35,6 +35,8 @@ function App() {
                           legalName = {currentSirenApiData['unite_legale'].denomination}
                           siret = {currentSirenApiData['unite_legale'].etablissement_siege.siret}
                           address = {currentSirenApiData['unite_legale'].etablissement_siege.geo_adresse}
+                          phoneNumber = {currentNameApiData['results'][0].phone}
+                          picture = {currentNameApiData['results'][0].picture.large}
                   />
                   <Accounts data = {currentAccountsApiData}/>
           </div>

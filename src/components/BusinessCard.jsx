@@ -7,10 +7,12 @@ const BusinessCard = (props) => {
         return (
             <div className = "business-card">
                 <div className = "business-card__name">{props.title+" "+props.last+" "+props.first}</div>
-                <div className = "business-card__company__title">Company</div>
+                <img className = "business-card__picture" src = {props.picture} alt = {"photo of "+props.first}/>
+                {/*<div className = "business-card__company__title">Company</div>*/}
                 <div className = "business-card__company__data">{props.legalName}</div>
-                <div className = "business-card__company__data">{props.siret}</div>
-                <div className = "business-card__company__data">{props.address}</div>
+                <div className = "business-card__company__data"><i class="fas fa-fingerprint"></i>{props.siret}</div>
+                <div className = "business-card__company__data"><i class="fas fa-map-marker-alt"></i>{props.address}</div>
+                <div className = "business-card__company__data"><i class="fas fa-phone-square-alt"></i>{props.phoneNumber}</div>
             </div>
             )
     } else {

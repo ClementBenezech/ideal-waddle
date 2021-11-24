@@ -2,9 +2,10 @@
 @import "/src/styles/mixins.scss";
 
 .business-card {
+    position:relative;
     width:90%;
     text-align:left;
-    padding: 4vw 0vw;
+    padding: 3vw 0vw;
     box-sizing:border-box;
     font-size: 1vw;
     @include mobile-only {
@@ -14,9 +15,25 @@
         align-items:center;
 
     }
+    &__picture {
+        position: absolute;
+        top: 5vw;;
+        right: 0;
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+        box-shadow: 0.2vw 0.2vw 0.4vw rgb(129, 129, 129);
+        @include mobile-only {
+            position: static;
+            height: 20vw;
+            width:20vw;
+            margin-bottom: 7vw;
+        }
+    }
     &__name {
         font-size: 2.3vw;
         color: #f35959;
+        margin-left: 0.5vw;
         @include mobile-only {
             font-size: 5vw;
             padding-bottom: 5vw;
@@ -24,7 +41,7 @@
     }
     &__company {
         &__title {
-            margin-left: 2vw;
+            margin: 0.5vw;
             margin-top: 1vw;
             margin-bottom: 1vw;
             font-size: 2vw;
@@ -36,10 +53,25 @@
         }
         &__data {
             margin-left: 2.5vw;
-
+            display:flex;
+            flex-direction:row;
+            margin: 1vw;
             @include mobile-only {
                 font-size: 3vw;
-                margin: 1vw;
+                &:nth-child(3) {
+                    color: #f35959;
+                    font-weight:bold;
+                }
+                
+            }
+            & i {
+                color: #6247d1;
+                font-size: 1.5vw;
+                width: 2vw;
+                @include mobile-only {
+                    font-size: 3.5vw;
+                    width: 4.5vw;
+                }
             }
         }
     }

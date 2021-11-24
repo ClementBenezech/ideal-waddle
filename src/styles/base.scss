@@ -11,6 +11,7 @@
     padding-left: 5vw;
      @include mobile-only {
          flex-direction:column;
+         width: 95%
      }
     
 }
