@@ -17,4 +17,4 @@ We use the custom hook in App to fetch all required data and feed it to child co
 
 The design uses Mansa colors from the getMansa.com website.
 
-I hope you like my style even if it is just plain JS :)
+Edit: I just added TypeScript support to the app, and added some Type definition

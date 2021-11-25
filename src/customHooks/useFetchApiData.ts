@@ -18,6 +18,7 @@ const useFetchApiData = (url: string) => {
                 response.json())
             .then (response => {
                 const data = response;
+                console.log(data);
                 //setting new value for apiData with what we got from the API call
                 setApiData(data);
         })}
