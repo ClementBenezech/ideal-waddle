@@ -3,16 +3,22 @@
 import "../styles/accounts.scss"
 import "../styles/accountsCard.scss"
 
-const AccountCard = (props) => {
+type AccountCardProps = {
+    accountNumber: string;
+    balance: number;
+    currency: string
+  };
+
+const AccountCard = (props:AccountCardProps) => {
 
         return (
             <div className = "account-card">
                 <div className = "account-card__label">Account Number</div>
-                <div className = "account-card__value">{props.account.account_number}</div>
+                <div className = "account-card__value">{props.accountNumber}</div>
                 <div className = "account-card__label">Balance</div>
-                <div className = "account-card__value">{props.account.available+" "+props.account.currency}</div>
+                <div className = "account-card__value">{props.balance+" "+props.currency}</div>
             </div>
-
+        
         )
 }
 export default AccountCard

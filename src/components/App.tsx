@@ -1,4 +1,5 @@
-
+//import React
+import React from 'react';
 //importing styles
 import '../styles/App.css';
 import "../styles/base.scss"
@@ -44,7 +45,7 @@ function App() {
     );
   }
   else {
-    return <i class="fas fa-cog fa-spin loader"></i>;
+    return <i className="fas fa-cog fa-spin loader"></i>;
   }
   
 }

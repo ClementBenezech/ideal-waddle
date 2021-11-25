@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 
 /* This custom hook fetches data from whatever url it gets as a parameter*/
 
-const useFetchApiData = (url) => {
+const useFetchApiData = (url: string) => {
 
 
     //Setting up a hook for our API data.
-    const [apiData, setApiData] = useState(null);
+    const [apiData, setApiData] = useState<any>(null);
 
     // Here we define what happens after component renders (like componentDidMount/componentDidUpdate)
     useEffect(() => {
